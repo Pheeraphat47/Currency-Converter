@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+
+body {
+    background-image: linear-gradient(to bottom,#FFFFFF,#E5E5E5,#CCCCCC);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* เซ็ทให้อยู่ตรงกลาง*/
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10%;
+}
+
+
+/* ปรับแต่ง หัวข้อเว็บ */
+
+h1 {
+    font-size: 42px;
+    background-color: orange;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/* ปรับแต่งปุมสลับสกุลเงิน */
+.btn {
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 5px 15px;
+    /* top left bottom right*/
+    margin-left: 12px;
+    border-style: none;
+}
+
+/* ปรับแต่งขนาดภาพ */
+
+.money-img {
+    width: 500px;
+
+}
+
+.currency {
+    padding: 40px 0;
+    /* top left */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -8%;
+
+
+}
+
+
+/* ปรับแต่งตัวเลือกสกุลเงิน */
+.currency select {
+    padding: 10px 20px 10px 20px;
+    /* top right bottom left */
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    background: transparent;
+    /* พื้นหลังโปร่งใส */
+    appearance: none;
+
+}
+
+.currency select:hover {
+    border-color: blue;
+}
+
+
+/* ปรับแต่ง ช่อง input */
+
+.currency input {
+    border: 0.5px solid lightgrey;
+    /* background: transparent; */
+    font-size: 30px;
+    text-align: right;
+
+}
+
+
+/* ปรับแต่งอัตราการแลกเปลี่ยน */
+
+.swap-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    font-size: 20px;
+    padding: 0 10px;
+    /* top right */
+}
